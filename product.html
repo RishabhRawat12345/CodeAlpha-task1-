@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./Product.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="back">
+            <a href="./index.html" class="button">Back</a>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <img src="./images/cart.png" alt="Cart">
+                <span class="cart-count" id="counter">0</span>
+            </button>
+        </div>
+    </nav>
+    
+    <div class="product-page" id="product-page">
+        <div class="cards">
+            <img class="product-img" src="" alt="">
+            <h1 class="product-title"></h1>
+            <h2 class="product-price"></h2>
+            <div class="stock-div">
+                <button class="stock-btn" data-action="decrease">-</button>
+                <input class="stock-display" type="text" value="0" readonly>
+                <button class="stock-btn" data-action="increase">+</button>
+            </div>
+            <div class="shopnow">
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="product-page" id="electronics-page">
+        <div class="cards">
+            <img class="product-img" src="" alt="">
+            <h1 class="product-title"></h1>
+            <h2 class="product-price"></h2>
+            <div class="stock-div">
+                <button class="stock-btn" data-action="decrease">-</button>
+                <input class="stock-display" type="text" value="0" readonly>
+                <button class="stock-btn" data-action="increase">+</button>
+            </div>
+            <div class="shopnow">
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="basic-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 E-commerce Store. All Rights Reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a></p>
+        </div>
+    </footer>
+    <script src="Product.js"></script>
+</body>
+</html>
